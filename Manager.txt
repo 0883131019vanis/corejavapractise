@@ -1,0 +1,24 @@
+package com.first;
+
+public class Manager extends Employee {
+	private int salary;
+	private String Grade;
+
+	public Manager(int salary, String grade) {
+		this.salary = salary;
+		this.Grade = grade;
+	}
+
+	void label() {
+		System.out.println("Employee Data");
+		System.out.println("Grade  " + Grade+"  "+"Salary " + salary);
+	}
+
+	public static void main(String[] args) {
+		Manager manager = new Manager(50000, "B");
+		Engineer engineer = new Engineer(70000, "A");
+		manager.label();
+		engineer.label();
+	}
+
+}
